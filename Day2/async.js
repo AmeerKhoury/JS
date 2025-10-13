@@ -31,5 +31,4 @@ async function fetchDataAsync() {
         console.error("Async/Await error:", error);
     }
 }
-
 fetchDataAsync();
