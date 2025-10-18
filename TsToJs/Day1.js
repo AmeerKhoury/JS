@@ -26,5 +26,4 @@ function getArray(items) {
 }
 let NumsArray = getArray([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 let StringsArray = getArray(['Ameer', 'Majed', 'Jamal', 'Al-Khoury']);
-export { };
-//# sourceMappingURL=Day1.js.map
+export {};

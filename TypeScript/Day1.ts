@@ -54,7 +54,6 @@ function getArray<T>(items: T[]): T[] {
     return new Array().concat(items);
 }
 
-
 let NumsArray = getArray<number>([1, 2, 3, 4, 5, 6, 7, 8, 9]);
 let StringsArray = getArray<string>(['Ameer', 'Majed', 'Jamal', 'Al-Khoury']);
 
