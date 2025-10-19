@@ -12,9 +12,9 @@ function maximumProfit(array) {
     let maxProfit = 0;
 
     for (let i = 1; i < array.length; i++) {
-        const current = array[i];
+        let current = array[i];
 
-        const profit = current - minPrice;
+        let profit = current - minPrice;
 
         if (profit > maxProfit) {
 
