@@ -31,7 +31,7 @@ const price1 = [100, 80, 120, 130, 70, 60, 100, 125];
 
 const price2 = [100, 80, 70, 65, 60, 55, 50];
 
-console.log(maximumProfit(price1)); // Output: 65
+console.log(maximumProfit(price1)); // Output  65
 
-console.log(maximumProfit(price2)); // Output: 0
+console.log(maximumProfit(price2)); // Output  0
 export { };
