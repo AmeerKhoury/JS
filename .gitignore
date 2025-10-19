@@ -1,0 +1,11 @@
+node_modules
+settings.json
+yarn.lock
+package-lock.json
+dist/
+build/
+.env
+.vscode/
+coverage/
+.prettierignore
+.editorconfig
