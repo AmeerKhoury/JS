@@ -1,31 +1,31 @@
 function getMaxOfArray(numArray: number[]): number {
-  return Math.max(...numArray);
+    return Math.max.apply(null, numArray);
 }
 
 function getMinOfArray(numArray: number[]): number {
-  return Math.min(...numArray);
+    return Math.min.apply(null, numArray);
 }
 
 function maximumProfit(array: number[]): number {
-  if (!array || array.length === 0) return 0;
+    if (array.length === 0) return 0;
 
-  let minPrice: any = array[0];
-  let maxProfit: number = 0;
+    let minPrice: any = array[0];
+    let maxProfit: number = 0;
 
-  for (let i = 1; i < array.length; i++) {
-    const current: any = array[i];
-    const profit: number = current - minPrice;
+    for (let i = 1; i < array.length; i++) {
+        const current: any = array[i];
+        const profit: number = current - minPrice;
 
-    if (profit > maxProfit) {
-      maxProfit = profit;
+        if (profit > maxProfit) {
+            maxProfit = profit;
+        }
+
+        if (current < minPrice) {
+            minPrice = current;
+        }
     }
 
-    if (current < minPrice) {
-      minPrice = current;
-    }
-  }
-
-  return maxProfit;
+    return maxProfit;
 }
 
 const price1: number[] = [100, 80, 120, 130, 70, 60, 100, 125];
