@@ -1,0 +1,37 @@
+function collatzLength(number);
+set count 1
+
+while number is not 1:
+
+if number even :
+number = number/2;
+
+else 
+number = 3* number + 1;
+count++;
+
+return count;
+
+
+
+
+function longestCollatz(limit)
+
+let longestchain = 0;
+let bestNumber = 0;
+
+
+for (let i = 1; i <= limit - 1 ; i++)
+let current = collatzLength(i);
+
+if current > longestchain :
+longestchain = current
+bestNumber = i;
+
+
+
+
+
+longestchain(1000000);
+
+
