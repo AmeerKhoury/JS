@@ -25,6 +25,8 @@
   "homepage": "https://github.com/AmeerKhoury/JS#readme",
   "devDependencies": {
     "@eslint/js": "^9.37.0",
+    "@types/jest": "^30.0.0",
+    "@types/supertest": "^6.0.3",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-jsdoc": "^39.9.1",
@@ -33,6 +35,8 @@
     "jest": "^30.2.0",
     "lint-staged": "^13.0.0",
     "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.5",
     "typescript": "^5.9.3"
   },
   "lint-staged": {
@@ -43,6 +47,7 @@
     ]
   },
   "dependencies": {
+    "18": "^0.0.0",
     "express": "^5.1.0"
   }
 }
