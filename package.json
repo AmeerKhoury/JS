@@ -1,7 +1,6 @@
 {
   "name": "hello",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +9,11 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "fix-all": "npm run lint:fix && npm run format",
-    "test": "jest"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -48,6 +51,7 @@
   },
   "dependencies": {
     "18": "^0.0.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
   }
 }
